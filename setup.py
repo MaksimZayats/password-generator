@@ -1,8 +1,21 @@
+import os
+
 from setuptools import setup
+
+
+VERSION = "0.0.1"
+
+
+def readme():
+    """ Load the contents of the README file """
+    readme_path = os.path.join(os.path.dirname(__file__), "README.md")
+    with open(readme_path, "r") as f:
+        return f.read()
+
 
 setup(
     name='p-gen',
-    version='0.0.1',
+    version=VERSION,
     packages=['password_generator'],
     url='https://github.com/MaximZayats/password-generator',
     author='Maxim',
