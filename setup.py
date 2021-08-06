@@ -3,7 +3,7 @@ import os
 from setuptools import setup
 
 
-VERSION = "0.0.2"
+VERSION = "0.0.3"
 
 
 def readme():
@@ -15,6 +15,8 @@ def readme():
 
 setup(
     name='p-gen',
+    description="A console utility that allows you to generate passwords based on code phrases and a secret key (seed).",
+    long_description=readme(),
     version=VERSION,
     packages=['password_generator'],
     url='https://github.com/MaximZayats/password-generator',
